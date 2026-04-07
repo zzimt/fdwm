@@ -220,6 +220,7 @@ void drw_scm_free(Drw* drw, Clr* scm, size_t clrcount) {
 
     for (i = 0; i < clrcount; i++)
         drw_clr_free(drw, &scm[i]);
+    free(scm);
 }
 
 void drw_setfontset(Drw* drw, Fnt* set) {
