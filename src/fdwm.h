@@ -82,6 +82,7 @@ void tagmon(const Arg* arg);
 void tile(Monitor* m);
 void togglebar(const Arg* arg);
 void togglefloating(const Arg* arg);
+void togglefullscreen(const Arg* arg);
 void toggletag(const Arg* arg);
 void toggleview(const Arg* arg);
 void unfocus(Client* c, int setfocus);

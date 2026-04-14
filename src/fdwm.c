@@ -1663,6 +1663,12 @@ void togglefloating(const Arg* arg) {
     arrange(selmon);
 }
 
+void togglefullscreen(const Arg* arg) {
+    (void)arg;
+    if (selmon->sel)
+        setfullscreen(selmon->sel, !selmon->sel->isfullscreen);
+}
+
 void toggletag(const Arg* arg) {
     unsigned int newtags;
 
